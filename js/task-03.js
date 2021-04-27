@@ -16,7 +16,12 @@ const images = [
     },
   ];
 
-  const ulImgEl = document.querySelector('#gallery');
-for (let image of images) {
-    ulImgEl.insertAdjacentHTML('beforeend', `<li><img src = "${image.url}" alt = "${image.alt}" width = "400px"></li>`);
-};
+const ulImgEl = document.querySelector('#gallery');
+  
+images.forEach((img) =>
+ulImgEl.insertAdjacentHTML('beforeend', `<li><img src = "${img.url}" alt = "${img.alt}" width = "400px"></li>`)
+)
+
+// for (let image of images) {
+//     ulImgEl.insertAdjacentHTML('beforeend', `<li><img src = "${image.url}" alt = "${image.alt}" width = "400px"></li>`);
+// };
