@@ -3,7 +3,7 @@ const input = document.getElementById("validation-input");
 const validLength = Number(input.dataset.length);
 
 const validInputLength = function(event){
-    if(event.currentTarget.value.length >= validLength){
+    if(event.currentTarget.value.length === validLength){
         input.classList.add('valid');
         input.classList.remove('invalid');
         
